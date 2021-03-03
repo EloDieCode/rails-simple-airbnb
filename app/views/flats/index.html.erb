@@ -1,0 +1,19 @@
+<div class="container d-flex">
+    <% @flats.each do |flat| %>
+      <div class="card" style="width: 10rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to flat.name, flat_path(flat) %></h5>
+          <h6 class="card-text"><%= flat.address %></h6>
+       </div>
+        <div class="card-footer">
+          <%= flat.price_per_night %> <i class="fas fa-euro-sign"></i>
+          <%= flat.number_of_guests %> <i class="fas fa-user-friends"></i>
+        </div>
+        <div class="card-infos">
+          <%= link_to "More info", flat_path(flat)%>
+          <%= link_to "Edit", flat_path(flat)%>
+          <%= link_to "Remove", flat_path(flat)%>
+        </div>
+      </div>
+    <% end %>
+  </div>
