@@ -1,6 +1,45 @@
 // Import page-specific CSS files here.
 @import "home";
 
-.cards {
-  margin : 8px;
+.maincontainer {
+  padding: 16px;
+  background-color: white;
+}
+
+.card {
+  display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  // padding: 16px;
+  // margin: 8px 0px;
+  text-decoration: none;
+  display: flex;
+  background-color: #F8F9FA;
+}
+
+.card-body {
+
+}
+.card-infos {
+  background-color: white;
+  justify-content: flex-end;
+}
+
+.card-footer {
+  text_align: center;
+  display: inline-block;
+  background-color: #F8F9FA;
+}
+
+.card-title {
+  a {
+    color: black;
+  }
+}
+#edit a {
+  color: #ffbe0f;
+}
+
+#remove a {
+  color: #8c0000;
 }
